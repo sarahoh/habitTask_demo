@@ -5212,6 +5212,7 @@ var cam_score = NaN;
 var subj_blk_scores = [];
 
 let version = "demo"; // 'RPP' or 'prolific'
+let group = 'demo';
 
 // define basic stuff
 let stage_chances = 9; // 6 keys
