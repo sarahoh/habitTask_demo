@@ -94,9 +94,9 @@ let welcome = {
   type: "html-keyboard-response",
   // type: "fullscreen",
   fullscreen_mode: true,
-    stimulus: "<p>Welcome to the experiment." +
-        "<br>This experiment requires your full attention - we will only be able to use your data if you participate fully! " +
-        "<br><br>If you focus on the task, the experiment should only take 30-60 minutes." +
+    stimulus: "<p>Welcome to the experiment. This is a shortened demo version of Experiment 1b." +
+        "<br>This experiment requires your full attention." +
+        "<br><br>If you focus on the task, this should take under 10 minutes." +
         "<br><br>Before we begin, please maximize your browser window and turn off all notifications (Facebook, texts, etc.) on your phone and computer. " +
         "<br><br>When you're ready, press [space]." +
         "</p>",
@@ -369,8 +369,7 @@ let thank_you_block = {
      <br><br>You collected ${prev_data.pts} points on the final block. This means you scored higher than ${prev_data.pct_comparison_score}% of players in this final phase of the game.
      <br><br>You collected ${prev_data.final} points throughout the game. This means you collected more stars than ${prev_data.pct_comparison_final}% of players.
      ${bonus_str}
-     <br><br>Saving your data... To ensure your data is submitted properly, please wait 15 seconds and do not close this window.
-     <br>Once your data is saved, you will be directed to a short post-task survey.</p>`;
+     <br><br>You may close this window.</p>`;
     },
     on_load: function() {
         // upload_data_json(file_name); // mail out data
@@ -384,8 +383,7 @@ timeline.push(thank_you_block);
 
 var last_block = {
   type: "html-keyboard-response",
-  stimulus: function() {return `<div class=‘center’><p>Your data is saved.
-You may close this window.</p></div>`},
+  stimulus: function() {return `<div class=‘center’><p>You may close this window.</p></div>`},
   choices: jsPsych.NO_KEYS
 };
 

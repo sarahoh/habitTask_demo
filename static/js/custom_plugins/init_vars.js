@@ -5225,22 +5225,22 @@ let num_practice_alex = 4; // 8 practice trials for alex
 let num_blocks_alex = 2; // 6 blocks in alex maze (used to be 4)
 let num_pres_per_arm = 2; // 25 trials per arm
 let min_per_arm_alex = 2; // at least 10 pres per arm
-let max_per_arm_alex = 2*2; // at most 150 per arm (600 trials)
+let max_per_arm_alex = 2; // at most 150 per arm (600 trials)
 alex_TTC = 3; // how many trials for each arm should be correct - 3/5
 
 // cam
 let min_per_arm_cam = 2; // at least 10 pres per arm
-let max_per_arm_cam = 5; // at most 25 per arm
-let cam_TTC = 3; // how many trials for each arm should be correct - 4/5
+let max_per_arm_cam = 2; // at most 25 per arm
+let cam_TTC = 1; // how many trials for each arm should be correct - 4/5
 
 // memory refresher right before final maze (both alex and cam)
-let max_per_arm_mem = 2; // at most twice per arm
+let max_per_arm_mem = 1; // at most twice per arm
 let mem_TTC = 1; // how many trials for each arm should be correct - 1/2
 
 /// both mazes/star collection
 let num_pres_per_arm_both_practice = 1; // once per arm
-let num_pres_per_arm_both_rev = 2; // presentations for each reversed arm per player
-let num_pres_per_arm_both_con = 2;
+let num_pres_per_arm_both_rev = 1; // presentations for each reversed arm per player
+let num_pres_per_arm_both_con = 1;
 
 let avatar_order = Math.random() < 0.5 ? 'lr' : 'rl';
 // image paths
